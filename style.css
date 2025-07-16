@@ -1,0 +1,265 @@
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e; /* Fundo azul-escuro profundo */
+    color: #e0e0e0; /* Cor de texto clara */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* --- Tipografia --- */
+h1, h2 {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #00aaff; /* Azul vibrante */
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0077cc;
+}
+
+/* --- Header e Footer --- */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+/* --- Estrutura dos Cartões de Pergunta --- */
+.question-card {
+    background-color: #474785; /* Cor do cartão */
+    border-radius: 25%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3a3a5e;
+}
+
+/* --- Estilos de Formulário --- */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #4a4a6e;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.options div {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+    accent-color: #00aaff;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
+}
+
+/* --- Estilos de Elementos Específicos --- */
+figure {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+figure img {
+    max-width: 150px;
+    height: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+}
+
+details {
+    margin-top: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #3a3a5e;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color: #4a4a6e;
+}
+
+details[open] > ol {
+    margin-top: 1rem;
+    padding-left: 20px;
+}
+
+/* --- Tabela de Pontuação --- */
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.score-table th, .score-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #4a4a6e;
+}
+
+.score-table thead {
+    background-color: #00aaff;
+    color: #1a1a2e;
+    font-weight: 700;
+}
+
+.score-table tbody tr:nth-child(even) {
+    background-color: #3a3a5e;
+}
+
+.score-table tfoot {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* --- Botão de Envio --- */
+.submit-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.submit-btn {
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0088cc;
+    transform: translateY(-2px);
+}
+
+/* --- Formulário de Feedback --- */
+fieldset {
+    border: 1px solid #4a4a6e;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: 600;
+    color: #00aaff;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
+    body {
+        line-height: 1.5;
+    }
+    .container {
+        margin: 1rem auto;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .question-card {
+        padding: 1.5rem;
+    }
+}
