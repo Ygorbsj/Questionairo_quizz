@@ -73,11 +73,11 @@ footer {
 /* --- Estrutura dos Cartões de Pergunta --- */
 .question-card {
     background-color: #474785; /* Cor do cartão */
-    border-radius: 25%;
+    border-radius: 10%;
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid #3a3a5e;
+    border: 2px solid #3a3a5e;
 }
 
 /* --- Estilos de Formulário --- */
