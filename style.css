@@ -21,19 +21,19 @@ body {
 /* --- Tipografia --- */
 h1, h2 {
     font-weight: 700;
-    color: #ffffff;
+    color: #f8f6f6;
     margin-bottom: 1rem;
 }
 
 h1 {
     font-size: 2.5rem;
     text-align: center;
-    color: #00aaff; /* Azul vibrante */
+    color: #000204; /* Azul vibrante */
 }
 
 h2 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #00aaff;
+    border-bottom: 2px solid #070104;
     padding-bottom: 0.5rem;
 }
 
